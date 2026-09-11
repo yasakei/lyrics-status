@@ -46,9 +46,11 @@ mewsic setup    # one-time wizard (Discord token, source, providers)
 mewsic          # dashboard + engine
 ```
 
-**Requirements:** a Discord user token, plus either Spotify connected to
-Discord (*Settings → Connections → Spotify*) or a
-[Last.fm API key](https://www.last.fm/api/account/create) with something
+**Requirements:** only a Discord user token. Spotify must be connected to
+Discord (*Settings → Connections → Spotify*); Mewsic obtains the short-lived
+Spotify access token through that Discord connection, so no Spotify client ID,
+client secret, or separate Spotify credential is required. Alternatively, use
+a [Last.fm API key](https://www.last.fm/api/account/create) with something
 actively scrobbling.
 
 > [!NOTE]
